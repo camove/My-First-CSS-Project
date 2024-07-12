@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Saira;
+}
+
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --turquoise: #26baa4;
+    --blue: #6173ff;
+    --darkgray: #4c545d;
+    --lightgray: #9fabb2;
+    --alamostwhite: #f5f5f5;
+    --gray:#7a7a7a;
+}
+
+/* HEADER */
+
+.header {
+    height: fit-content;
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    padding-top: 150px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--darkgray);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header p, .snippet p, .clipboard p, .supercharge p {
+    color: var(--lightgray);
+    font-size: 1.1rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.downloadButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0 10px 0;
+}
+
+.ios, .mac {
+    max-width: 18%;
+    height: 40px;
+    border-radius: 20px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.ios a:link, .mac a:link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.ios a:visited, .mac a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ios {
+    background-color: var(--turquoise);
+    border-bottom: outset var(--turquoise);
+}
+
+.mac {
+    background-color: var(--blue);
+    border-bottom: outset var(--blue);
+}
+
+.ios:hover, .mac:hover {
+    opacity: 0.8;
+}
+
+/* FISRT SECTION */
+
+.snippet, .clipboard {
+    padding: 100px 0 50px 0;
+}
+
+.snippet h3, .clipboard h3, .supercharge h3 {
+    color: var(--darkgray);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.mainCharacteristics {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.macPicture {
+    height: fit-content;
+    min-width: 40%;
+    object-fit: cover;
+}
+
+.macPicture img {
+    width: 100%;
+    height: 100%;
+}
+
+.characteristics {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.characteristics p {
+    min-width: 80%;
+}
+
+.characteristics div {
+    width: 60%;
+}
+
+.characteristics h5, .blacklist h5, .plainText h5, .sneakPreview h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--darkgray);
+}
+
+.characteristics p, .blacklist p, .plainText p, .sneakPreview p {
+    font-size: 0.8rem;
+    color: var(--lightgray);
+}
+
+/* SECOND SECTION */
+
+.devicesPicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.supercharge {
+    width: 100%;
+}
+
+/* THIRD SECTION */
+
+.functions {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 100px 0 100px;
+}
+
+.functions img {
+    height: auto;
+}
+
+.blacklist, .plainText, .sneakPreview {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    object-fit: contain;
+}
+
+.blacklistIcon, .plainTextIcon, .sneakPreviewIcon {
+    height: 50px;
+}
+
+.blacklist p, .plainText p, .sneakPreview p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.blacklist h5, .plainText h5, .sneakPreview h5 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* LINKS */
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 100px 30px 0 30px;
+}
+
+.links div {
+    object-fit: cover;
+}
+
+.links img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--alamostwhite);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.footerLogo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.infoLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.infoLinks a {
+    text-decoration: none;
+    color: var(--darkgray)
+}
+
+.infoLinks a:hover {
+    color: var(--turquoise)
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.socialMedia img:hover {
+    filter: invert(63%) sepia(33%) saturate(894%) hue-rotate(122deg) brightness(91%) contrast(86%);
+}
+
+@media (max-width: 800px) {
+    .header {
+        background-image: url('./images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header p, .snippet p, .clipboard p, .supercharge p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .downloadButtons {
+        flex-direction: column;
+    }
+
+    .ios, .mac {
+        min-width: 85%;
+    }
+
+    .snippet h3, .clipboard h3, .supercharge h3 {
+        font-size: 1.8rem;
+    }
+
+    .mainCharacteristics {
+        flex-direction: column;
+    }
+
+    .characteristics p {
+        text-align: center;
+    }
+    
+    .characteristics h5 {
+        text-align: center;
+    }
+
+    .characteristics div {
+        width: 40%;
+    }
+
+    .functions {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 100px 50px 0 50px;
+    }
+
+    .blacklist, .plainText, .sneakPreview {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .infoLinks {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .infoLinks a {
+        font-size: 0.8rem;
+    }
+
+    .socialMedia {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p, .snippet p, .clipboard p, .supercharge p {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .ios, .mac {
+        min-width: 85%;
+    }
+
+    .snippet h3, .clipboard h3, .supercharge h3 {
+        font-size: 1.6rem;
+    }
+
+    .functions {
+        padding: 100px 20px 0 20px;
+    }
+}
